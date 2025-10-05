@@ -1,7 +1,8 @@
 package serie_cour.serie1;
-
+import java.util.Scanner;
+;
 public class exercice1_calculatrice {
-        public static void main(String[] args) {
+        public static void main (String[] args) {
             Scanner sc = new Scanner(System.in);
 
             // Lecture des deux nombres
