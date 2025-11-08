@@ -1,4 +1,4 @@
-package tp1;
+package serie_tp.tp1;
 
 import java.util.Scanner;
 public class exercice4 {

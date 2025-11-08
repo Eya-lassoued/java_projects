@@ -8,26 +8,49 @@ public class EtudeDeCas {
      System.out.println("choisir l'opperation a faire ");
      String op=sc.next();
      if(op.equals("cree")){
-         utilisateur u=new utilisateur();
+
          System.out.println("nom d'utilisateur");
-         u.nom=sc.next();
+         System.out.println("n=");
+         String n =sc.nextLine();
          System.out.println("prenom d'utilisateur");
-         u.prenom=sc.next();
+         String p =sc.nextLine();
          System.out.println(" age d'utilisateur");
-         u.age=sc.nextInt();
+         int a=sc.nextInt();
+        utilisateur u=new utilisateur(n,p,a);
          list.add(u);
      }
      for(utilisateur u:list){
-         System.out.println(u.nom+" "+u.prenom+" "+u.age);
+         System.out.println(u.getNom()+" "+u.getPrenom()+" "+ u.getAge()) ;
 
      }
 
     }
 }
 class utilisateur{
-    String nom;
-    String prenom;
-    int age;
-
-
+     private String nom;
+    private String prenom;
+    private int age;
+public String getNom() {
+    return nom;
+}
+public void setNom(String nom) {
+    this.nom = nom;
+}
+public String getPrenom() {
+    return prenom;
+}
+public void setPrenom(String prenom) {
+    this.prenom = prenom;
+}
+public int getAge() {
+    return age;
+}
+public void setAge(int age) {
+    this.age = age;
+}
+public utilisateur(String n, String p, int a) {
+    this.nom=n;
+    this.prenom=p;
+    this.age=a;
+}
 }

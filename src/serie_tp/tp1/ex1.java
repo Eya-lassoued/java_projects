@@ -1,4 +1,4 @@
-package tp1;
+package serie_tp.tp1;
 
 public class ex1 {
     public static void main(String[] args) {
